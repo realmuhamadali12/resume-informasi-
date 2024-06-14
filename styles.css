@@ -1,0 +1,96 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Image */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://th.bing.com/th/id/R.b0b7914f7b925a4101dd1e0ab5662b8c?rik=deFrQbviG%2boliA&riu=http%3a%2f%2fwww.technocrazed.com%2fwp-content%2fuploads%2f2015%2f11%2fHD-Galaxy-Wallpapers-Free-Download-119.jpg&ehk=qaYY3O6T3fWPB1fTacSPAKXICJ9CntlreLDA0Lk2MIM%3d&risl=&pid=ImgRaw&r=0') no-repeat center center;
+    background-size: cover;
+    opacity: 11; /* Adjust transparency */
+    z-index: -1;
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(20, 32, 33, 0.8); /* White with transparency */
+    box-shadow: 0 0 10px rgba(248, 2, 2, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading Styles */
+h1, h2 {
+    text-align: center;
+    color: #c505a1;
+    margin-bottom: 20px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+/*Certificate Styles */
+.certificate-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Link Styles */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    ul li {
+        padding: 8px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+}
